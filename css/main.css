@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 62.5%;
+}
+
+html, body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at 50% -20.71%, #fbe2d5 0, #fadace 10%, #f9d2c7 20%, #f7c9c1 30%, #f5c0bb 40%, #f2b5b5 50%, #eeabb1 60%, #eaa1ae 70%, #e699ae 80%, #e091af 90%, #da8bb1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    background-color: rgba(255, 255, 255, 0.589);
+    max-width: 95rem;
+    max-height: 45rem;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.308);
+    
+}
+
+#container-image {
+    background-image: url(../img/background_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 95%;
+    height: 95%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container-image > img {
+    max-width: 4rem;
+    background-color: #ffffffbd;
+    margin: .6rem;
+    border-radius: 100%;
+}
+
+#container-image > img:hover {
+    background-color: #b1aeaec5;
+}
+
+
+#button_left {
+    animation:  .5s ease forwards;
+    
+    opacity: 0;
+}
+
+#button_right {
+    animation: .5s ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+
+
+
+
+@keyframes buttonLeftMoviment {
+    
+    from {
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes buttonRightMoviment {
+    
+    from {
+        opacity: 0;
+        transform: translateX(1rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+
+@keyframes hiddenButtonLeft {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-1rem);
+        opacity: 0;
+    }
+}
+
+@keyframes hiddenButtonRight {
+    
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+}
