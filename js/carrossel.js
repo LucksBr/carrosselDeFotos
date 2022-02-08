@@ -40,8 +40,3 @@ let idOfContainer = 0;
     
     buttonLeft.addEventListener('click', alterarId)
     buttonRight.addEventListener('click', alterarId)
-
-
-
-
-
