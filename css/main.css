@@ -11,7 +11,7 @@ html, body {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to right, #000000, #434343);
+    background: linear-gradient(135deg, #000000, #434343);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@ html, body {
 /* CARROSSEL */
 
 #container {
-    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    
     max-width: 70rem;
     max-height: 47rem;
     width: 90%;
@@ -32,7 +32,6 @@ html, body {
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
-    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.426);
     padding: 1rem;
 }
 
@@ -48,6 +47,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2);
 }
 
 
@@ -91,8 +91,8 @@ html, body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background: rgb(255, 255, 255);
-       
+        background: #EBF2FA;
+        box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2);
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
     }
