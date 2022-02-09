@@ -37,6 +37,5 @@ let idOfContainer = 0;
         container_image.style.backgroundImage = `url(../img/${bancoDeImagens[idOfContainer]})`
     }
 
-    
-    buttonLeft.addEventListener('click', alterarId)
-    buttonRight.addEventListener('click', alterarId)
+buttonLeft.addEventListener('click', alterarId)
+buttonRight.addEventListener('click', alterarId)
