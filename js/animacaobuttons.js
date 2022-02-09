@@ -4,6 +4,7 @@ const container = document.getElementById('container');
 
 
 
+
 function animationButtons () {
     buttonLeft.style.animationName = 'buttonLeftMoviment';
     buttonRight.style.animationName = 'buttonRightMoviment';

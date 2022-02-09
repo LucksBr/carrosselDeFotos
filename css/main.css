@@ -11,7 +11,7 @@ html, body {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    background-image: radial-gradient(circle at 50% -20.71%, #fbe2d5 0, #fadace 10%, #f9d2c7 20%, #f7c9c1 30%, #f5c0bb 40%, #f2b5b5 50%, #eeabb1 60%, #eaa1ae 70%, #e699ae 80%, #e091af 90%, #da8bb1 100%);
+    background: linear-gradient(to right, #000000, #434343);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,8 +22,8 @@ html, body {
 /* CARROSSEL */
 
 #container {
-    background-color: rgba(255, 255, 255, 0.589);
-    max-width: 95rem;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    max-width: 70rem;
     max-height: 47rem;
     width: 90%;
     height: 96%;
@@ -32,17 +32,19 @@ html, body {
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
-    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.308);
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.426);
     padding: 1rem;
 }
 
 #container-image {
-    background-image: url(../img/background_1.jpg);
+    background: url(../img/background_1.jpg);
     background-position: center center;
     background-size: cover;
     width: 95%;
     height: 95%;
-
+    margin-top: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,21 +84,49 @@ html, body {
     /* CARROSSEL COLLECTION */
 
     #container-colecao {
-        width: 100%;
-        height: 6rem;
+        
+        width: 95%;
+        height: 8rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center
+        align-items: center;
+        background: rgb(255, 255, 255);
+       
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
     }
     
     #container-colecao > div {
-        width: 9rem;
-        height: 5em;
-        background-color: #e091af;
-        margin: .5rem .1rem;
+        width: 7rem;
+        height: 7em;
+        margin: 1rem 1rem;
+        border-radius: 100rem;
+        background-position: center center;
+        background-size: cover;
+        box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.555);
+        border: .1rem solid black;
+        opacity: 0.8;
         
     }
+
+    #container-colecao > #img-1 {
+        background-image: url(../img/background_1.jpg);
+    }
+
+    #container-colecao > #img-2 {
+        background-image: url(../img/background_2.jpg)
+    }
+
+    #container-colecao > #img-3 {
+        background-image: url(../img/background_3.jpg)
+    }
+
+    #container-colecao > #img-4 {
+        background-image: url(../img/background_4.jpg)
+    }
+
+
 
     /* --CARROSSEL COLLECTION */
 
