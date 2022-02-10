@@ -10,6 +10,7 @@ let idOfContainer = 0;
     function alterarId (event) {
         const idbutton = event.path[0].id;
 
+        
         if( idbutton == 'button_left' ) {
             --idOfContainer;
             conferirIndex()
@@ -22,6 +23,7 @@ let idOfContainer = 0;
             console.log(idOfContainer);
         }
 
+        alterarCollection()
         alterarImage()
     }
     
@@ -41,15 +43,34 @@ let idOfContainer = 0;
         container_image.style.backgroundImage = `url(../img/${bancoDeImagens[idOfContainer]})`
     }
 
+    function alterarCollection() {
+        
+        img1.style.background = ` url(../img/${bancoDeImagens[idOfContainer + 1]} `
+        img2.style.background = ` url(../img/${bancoDeImagens[idOfContainer + 2 ]}`
+        img3.style.background = ` url(../img/${bancoDeImagens[idOfContainer + 3 ]}`
+        img4.style.background = ` url(../img/${bancoDeImagens[idOfContainer + 4 ]}`
+        img1.style.backgroundSize = 'cover'
+        img2.style.backgroundSize = 'cover'
+        img3.style.backgroundSize = 'cover'
+        img4.style.backgroundSize = 'cover'
+    
+    }
+
 buttonLeft.addEventListener('click', alterarId)
 buttonRight.addEventListener('click', alterarId)
 
-window.onload = resetCollectImage() 
+
 
 function resetCollectImage () {
-    img1.style.background = `cover url(../img/${bancoDeImagens[0]} `
-    
-    img2.style.background = `cover url(../img/${bancoDeImagens[1]}`
-    img3.style.background = `cover url(../img/${bancoDeImagens[2]}`
-    img4.style.background = `cover url(../img/${bancoDeImagens[3]}`
+    img1.style.backgroundImage = `url(../img/${bancoDeImagens[1]} `
+    img2.style.background = ` url(../img/${bancoDeImagens[2]}`
+    img3.style.background = ` url(../img/${bancoDeImagens[3]}`
+    img4.style.background = ` url(../img/${bancoDeImagens[4]}`
+    img1.style.backgroundSize = 'cover'
+    img2.style.backgroundSize = 'cover'
+    img3.style.backgroundSize = 'cover'
+    img4.style.backgroundSize = 'cover'
+
 }
+
+window.onload = resetCollectImage() 
